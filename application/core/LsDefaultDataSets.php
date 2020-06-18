@@ -555,7 +555,7 @@ class LsDefaultDataSets
                         element: '#group_name_en',
                         maxDelay: 1000
                     }",
-                    'path' => ['/admin/questiongroups/sa/add', ['surveyid' => '[0-9]{4,25}']],
+                    'path' => ['/questionGroupsAdministration/add', ['surveyid' => '[0-9]{4,25}']],
                     'placement' => 'bottom',
                     'redirect' => false,
                     'prev' => '-1',
@@ -569,7 +569,7 @@ class LsDefaultDataSets
                 .gT('You do not need to add a description to your question group, but sometimes it makes sense to add a little extra information for your participants.'),
                 'settings' => json_encode(array(
                     'element' => 'label[for=description_en]',
-                    'path' => ['/admin/questiongroups/sa/add', ['surveyid' => '[0-9]{4,25}']],
+                    'path' => ['/questionGroupsAdministration/add', ['surveyid' => '[0-9]{4,25}']],
                     'placement' => 'top',
                     'redirect' => false,
                 ))
@@ -581,7 +581,7 @@ class LsDefaultDataSets
                 'content' => gT("For now it's best to leave these additional settings as they are. If you want to know more about randomization and relevance settings, have a look at our manual."),
                 'settings' => json_encode(array(
                     'element' => '#randomization_group',
-                    'path' => ['/admin/questiongroups/sa/add', ['surveyid' => '[0-9]{4,25}']],
+                    'path' => ['/questionGroupsAdministration/add', ['surveyid' => '[0-9]{4,25}']],
                     'placement' => 'right',
                     'redirect' => false,
                 ))
@@ -595,7 +595,7 @@ class LsDefaultDataSets
                 .'<p class="alert bg-warning">'.gT("Now click on 'Save and add question'.").'</p>',
                 'settings' => json_encode(array(
                     'element' => '#save-and-new-question-button',
-                    'path' => ['/admin/questiongroups/sa/add', ['surveyid' => '[0-9]{4,25}']],
+                    'path' => ['/questionGroupsAdministration/add', ['surveyid' => '[0-9]{4,25}']],
                     'placement' => 'bottom',
                     'reflex' => true,
                     'redirect' => false,
