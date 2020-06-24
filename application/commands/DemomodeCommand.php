@@ -86,14 +86,14 @@ class DemomodeCommand extends CConsoleCommand
         }
 
         //Add the general boxes again
-        foreach ($templateData = LsDefaultDataSets::getBoxesData() as $boxes) {
+        foreach (LsDefaultDataSets::getBoxesData() as $boxes) {
             Yii::app()->db->createCommand()->insert("{{boxes}}", $boxes);
         }
         // At last reset the basic themes       
-        foreach ($templateData = LsDefaultDataSets::getTemplatesData() as $template) {
+        foreach (LsDefaultDataSets::getTemplatesData() as $template) {
             Yii::app()->db->createCommand()->insert("{{templates}}", $template);
         }
-        foreach ($templateConfigurationData = LsDefaultDataSets::getTemplateConfigurationData() as $templateConfiguration) {
+        foreach (LsDefaultDataSets::getTemplateConfigurationData() as $templateConfiguration) {
             Yii::app()->db->createCommand()->insert("{{template_configuration}}", $templateConfiguration);
         }
     }
