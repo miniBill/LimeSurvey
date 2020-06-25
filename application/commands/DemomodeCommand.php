@@ -123,9 +123,6 @@ class DemomodeCommand extends CConsoleCommand
         $aSamplesurveys = scandir($documentationSurveyPath);
         $surveysToActivate = [];
         foreach ($aSamplesurveys as $sSamplesurvey) {
-            $result = null;
-            //Try catch for console application to be able to import surveys
-            
             $result = @ XMLImportSurvey($documentationSurveyPath.$sSamplesurvey);
 
             if (in_array($sSamplesurvey, ['ls205_sample_survey_multilingual.lss', 'ls205_randomization_group_test.lss', 'ls205_cascading_array_filter_exclude.lss'])) {
