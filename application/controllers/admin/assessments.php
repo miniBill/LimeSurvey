@@ -248,12 +248,13 @@ class Assessments extends Survey_Common_Action
     }
 
     /**
-     * return the groups of the current survey
-     * @param Survey $oSurvey
-     * @param array $aData
+     * Return the groups of the current survey
+     * 
+     * @param Survey $oSurvey Survey
+     * 
      * @return array $aGroups groupnames in array
      */
-    private function _collectGroupData($oSurvey, &$aData = array())
+    private function _collectGroupData($oSurvey)
     {
         $aGroups = [];
         $db = Yii::app()->db;
