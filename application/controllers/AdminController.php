@@ -365,7 +365,6 @@ class AdminController extends LSYii_Controller
         'tutorials'        => 'TutorialsController',
         'tutorialentries'  => 'TutorialEntryController',
         'extensionupdater' => 'ExtensionUpdaterController',
-        'filemanager'      => 'LimeSurveyFileManager'
         );
     }
 
